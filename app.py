@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def ping():
-    return 'ok', 200
+    return 'oke', 200
 
 if __name__ == '__main__':
-    app.run()
+    app.run('0.0.0.0', 5000, debug=True)
