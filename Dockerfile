@@ -4,6 +4,4 @@ COPY . /root
 
 WORKDIR /root
 
-RUN pip install flask
-
-CMD ["python", "app.py"]
+RUN pip install flask gunicorn
