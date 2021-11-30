@@ -28,9 +28,6 @@ def bad_request():
 
 def show_image(flower_class):
     flower_images = {
-        # 0: "<img src='/static/setosa.jpg' alt='setosa'>",
-        # 1: "<img src='/static/versicolor.jpg' alt='versicolor'>",
-        # 2: "<img src='/static/virginica.jpg' alt='virginica'>"
         0: "setosa",
         1: "versicolor",
         2: "virginica"
