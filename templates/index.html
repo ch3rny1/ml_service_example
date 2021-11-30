@@ -1,0 +1,19 @@
+<div>
+
+<form method="POST" action="/submit" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    {{ form.sepal_length }} {{ form.sepal_width }}
+</br><br>
+    {{ form.petal_length }} {{ form.petal_width }}
+    <input type="submit" value="go">
+</form>
+
+<img src='/static/{{ image }}.jpg' alt='{{image}}' {{style}}>
+
+<br><br>
+<form method="POST" action="/submit" enctype="multipart/form-data">
+    {{ form.csrf_token }}{{ form.fileobject }}
+    <input type="submit" value="go">
+</form>
+
+</div>
